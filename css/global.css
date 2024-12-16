@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,11 +48,11 @@ table {
 /* ROOTS */
 
 :root {
-	--primary-color: #000;
-	--secondary-color: #000;
-	--clear-color: #000;
-	--clear-color2: #000;
-	--background-color: #000;
+	--primary-color: #BC6C25;
+	--secondary-color: #DDA15E;
+	--clear-color: #FEFAE0;
+	--background-color: #283618;
+    --background-color2: #606C38;
 	--white: #fff;
     --font: arial, serif;
 
@@ -62,7 +63,6 @@ table {
 
 body {
   	font-family: var(--font);
-	background-color: var(--background-color);
 	color: var(--white);
 	height: 100vh;
 
