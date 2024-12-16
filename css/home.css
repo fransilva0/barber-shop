@@ -17,6 +17,7 @@
     width: 100%;
     box-sizing: border-box;
     position: absolute;
+    z-index: 100;
 }
 
 .highlight-button{
@@ -26,9 +27,10 @@
     padding: 0.5rem;
     margin: 1rem;
     height: 2rem;
+    transition: transform 0.3s ease;
 
     &:hover {
-        background-color: var(--secondary-color);
+        transform: scale(1.05);
     }
 }
 
@@ -55,7 +57,6 @@
     display: none; 
     width: 200px;
     background: var(--primary-color);
-
 } 
 
 .navbar li { 
@@ -83,10 +84,54 @@
   }
 
 .header-bottom {
-
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); text-align: center;
 }
 
 .header-bottom h1 {
     font-size: 4rem;
+    color: var(--white);
+}
+
+.hugeicons--chair-barber::after {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23606C38' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23606C38'%3E%3Cpath d='M15.697 15H8c-1.105 0-2-.905-2-2.021s.898-2.027 2.001-1.977c4.69.214 7.294 1.146 8.383 1.65c.396.184.616.591.616 1.031A1.31 1.31 0 0 1 15.697 15'/%3E%3Cpath d='m17 14l3.94-10.516c.21-.575-.15-1.193-.787-1.355c-1.634-.415-3.345.182-3.883 1.656C15.644 5.496 15 8.131 15 12m0-4.04s-3.381-1.394-4.68-.82c-.39.172-.722.457-.956.82C9 8.526 9 9.35 9 11m-3 2v3c0 .932 0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C4.398 19 3.932 19 3 19m9-4v6m-2 0h4'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+#about {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem;
+}
+
+.about-infos img {
+    height: 25rem;
+    margin: 0 2rem 0 2rem;
+}
+
+.about-infos p {
+    line-height: 1.5rem;
+    text-align: left;
 }
