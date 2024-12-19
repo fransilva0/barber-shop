@@ -1,3 +1,7 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* RESET */
 
 html, body, div, span, applet, object, iframe,
@@ -54,8 +58,7 @@ table {
 	--background-color: #283618;
     --background-color2: #606C38;
 	--white: #fff;
-    --font: arial, serif;
-
+    --font:  "Montserrat", serif;
   }
   
 
