@@ -103,7 +103,7 @@
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23606C38' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23606C38'%3E%3Cpath d='M15.697 15H8c-1.105 0-2-.905-2-2.021s.898-2.027 2.001-1.977c4.69.214 7.294 1.146 8.383 1.65c.396.184.616.591.616 1.031A1.31 1.31 0 0 1 15.697 15'/%3E%3Cpath d='m17 14l3.94-10.516c.21-.575-.15-1.193-.787-1.355c-1.634-.415-3.345.182-3.883 1.656C15.644 5.496 15 8.131 15 12m0-4.04s-3.381-1.394-4.68-.82c-.39.172-.722.457-.956.82C9 8.526 9 9.35 9 11m-3 2v3c0 .932 0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C4.398 19 3.932 19 3 19m9-4v6m-2 0h4'/%3E%3C/g%3E%3C/svg%3E");
   }
 
-#about {
+#about, #services {
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -112,7 +112,7 @@
     padding: 2rem;
 }
 
-#about h2 {
+#about h2, #services h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -134,4 +134,49 @@
 .about-infos p {
     line-height: 1.5rem;
     text-align: left;
+}
+
+.file-icons--moustache::after {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    vertical-align: -0.125em;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23606C38' d='M55.156 248.581c1.436-7.967-2.535-15.098-10.912-14.423c-11.363.917-19.27 24.568 4.904 32.438c19.818 6.453 34.247-8.485 57.08-31.534c51.017-51.5 112.62-56.495 150.188-4.506c15.484-28.493 76.52-75.99 169.716 22.532c34.236 36.192 64.826 2.156 48.067-16.523c-7.624-8.497-22.525 3.369-15.021 12.016h-1.503c-34.978-31.02 38.085-60.006 52.563-7.51c14.96 79.017-68.393 91.862-135.167 63.077c-129.057-64.588-130.434-47.237-255.335 6.009c-38.332 15.713-85.277 6.735-104.227-11.434c-22.507-21.578-21.115-72.856 8.103-83.188c29.82-11.962 55.048 13.647 31.544 33.046'/%3E%3C/svg%3E");
+}
+
+#services ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services ul li {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    padding: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services ul li img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#services ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-resume {
+    margin-bottom: 2rem;
+}
+
+.services-price {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    font-size: 2rem;
+    color: var(--background-color2);
 }
