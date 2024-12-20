@@ -28,14 +28,14 @@
                         <a href="#experts">Experts</a>
                     </li>
                     <li>
-                        <a href="#blog">Blog</a>
+                        <a href="#reservations">Reservas</a>
                     </li>
                     <li>
                         <a href="#contact">Contatos</a>
                     </li>
                 </ul>
             </nav>
-            <a href="#contact" class="highlight-button">Reservas</a>
+            <a href="#reservations" class="highlight-button">Reservas</a>
         </div>
 
         <div class="header-bottom">
@@ -122,7 +122,65 @@
                 </li>
             </ul>
         </section>
-        <section id="blog"></section>
+
+        <section id="reservations">
+            <div class="grid-time">
+                <ul>
+                    <li>
+                        <p>Segunda</p>
+                        <p>09:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>Terça</p>
+                        <p>09:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>Quarta</p>
+                        <p>09:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>Quinta</p>
+                        <p>09:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>Sexta</p>
+                        <p>09:00 - 19:00</p>
+                    </li>
+                    <li>
+                        <p>Sábado</p>
+                        <p>09:00 - 17:00</p>
+                    </li>
+                    <li>
+                        <p>Domingo</p>
+                        <p>Fechado</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form">
+                <form action="/submit" method="post">
+                    
+                    <label for="name">Nome Completo:</label>
+                    
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="phone">Telefone:</label>
+                    
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="time">Data e Hora:</label> 
+                    
+                    <input type="text" id="time" name="time" required>
+                    
+                    <label for="notes">Anotações:</label>
+                    
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                    
+                    <button type="submit">Agendar uma Reserva</button>
+                
+                </form>
+            </div>
+        </section>
         <section id="contact"></section>
     </main>
     

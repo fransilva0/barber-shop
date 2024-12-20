@@ -50,6 +50,28 @@
     .featured-phrase-center p {
         font-size: 1rem;
     }
+
+    #reservations {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .grid-time {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .grid-time ul {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2rem;
+    }
 }
 
 /* iPads, tablets: 481px — 768px */
@@ -90,6 +112,28 @@
     .featured-phrase-center p {
         font-size: 1rem;
     }
+
+    #reservations {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .grid-time {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .grid-time ul {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2rem;
+    }
 }
 
 /* Telas pequenas, laptops: 769px — 1024px */
@@ -128,5 +172,27 @@
 
     .featured-phrase-center p {
         font-size: 1rem;
+    }
+
+    #reservations {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .grid-time {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .grid-time ul {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2rem;
     }
 }
