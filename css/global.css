@@ -54,9 +54,6 @@ table {
 :root {
 	--primary-color: #BC6C25;
 	--secondary-color: #DDA15E;
-	--clear-color: #FEFAE0;
-	--background-color: #283618;
-    --background-color2: #606C38;
 	--white: #fff;
     --font:  "Montserrat", serif;
   }
@@ -64,8 +61,16 @@ table {
 
 /* GLOBAL */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   	font-family: var(--font);
 	height: 100vh;
 
+}
+
+button {
+	cursor: pointer;
 }
